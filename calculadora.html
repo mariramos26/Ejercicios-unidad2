@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+            font-family: calibri;
+        }
+
+        .calculadora{
+            text-align: center;
+            background: pink;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1{
+            margin-bottom: 10px;
+        }
+
+        #pantalla{
+            width: 260px;
+            height: 40px;
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+
+        button{
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+            margin: 5px;
+            border-radius: 10px;
+            border: none;
+            background: #e6e6e6;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background: #d4d4d4;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="calculadora">
+
+<h1>Mi Calculadora</h1>
+
+<input type="text" id="pantalla" disabled>
+
+<br>
+
+<button onclick="agregar('7')">7</button>
+<button onclick="agregar('8')">8</button>
+<button onclick="agregar('9')">9</button>
+<button onclick="agregar('/')">/</button>
+
+<br>
+
+<button onclick="agregar('4')">4</button>
+<button onclick="agregar('5')">5</button>
+<button onclick="agregar('6')">6</button>
+<button onclick="agregar('*')">*</button>
+
+<br>
+
+<button onclick="agregar('1')">1</button>
+<button onclick="agregar('2')">2</button>
+<button onclick="agregar('3')">3</button>
+<button onclick="agregar('-')">-</button>
+
+<br>
+
+<button onclick="agregar('0')">0</button>
+<button onclick="agregar('.')">.</button>
+<button onclick="calcular()">=</button>
+<button onclick="borrar()">C</button>
+<button onclick="porcentaje()">%</button>
+<button onclick="agregar('+')">+</button>
+
+</div>
+
+<script>
+
+function agregar(valor){
+    document.getElementById("pantalla").value += valor;
+}
+
+function calcular(){
+    document.getElementById("pantalla").value =
+    eval(document.getElementById("pantalla").value);
+}
+
+function borrar(){
+    document.getElementById("pantalla").value = "";
+}
+
+function porcentaje(){
+    let valor = document.getElementById("pantalla").value;
+    document.getElementById("pantalla").value = valor / 100;
+}
+
+
+
+
+</script>
+
+</body>
+</html>
