@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Docentes</title>
+<link rel="stylesheet" href="estilo.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="contenedor">
+  <div class="layout">
+
+    <div class="columna-izquierda">
+      <h2>Agregar Docente</h2>
+
+      <select id="tipoDoc">
+        <option>C.C</option>
+        <option>C.E</option>
+        <option>TI</option>
+        <option>NIUP</option>
+      </select>
+
+      <input type="text" id="nombre" placeholder="Nombre">
+      <input type="text" id="apellido" placeholder="Apellido">
+      <input type="date" id="fecha">
+
+      <select id="nivel">
+        <option>Pregrado</option>
+        <option>Maestría</option>
+        <option>Doctorado</option>
+      </select>
+
+      <select id="area">
+        <option>Matemáticas</option>
+        <option>Ciencias</option>
+        <option>Sistemas</option>
+      </select>
+
+      <button id="btnAgregar" onclick="agregarDocente()">Agregar</button>
+      <input type="search" id="buscar" placeholder="Buscar por Nombre" oninput="mostrarDocentes()">
+      <button onclick="mostrarDocentes()">Ver Docentes</button>
+    </div>
+
+    <div class="columna-derecha">
+      <div id="contenedorLista">
+        <h3>Lista de Docentes</h3>
+        <ul id="lista"></ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:  #e8f0fe;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+
+.layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.columna-izquierda {
+  width: 350px;
+  flex-shrink: 0;
+}
+
+.columna-derecha {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-tarjeta {
+  display: inline-block !important;
+  width: auto !important;
+  margin-top: 6px;
+}
+#lista {
+  padding: 0;
+  width: 100%;
+}
+
+#lista li {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#buscar {
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+input::placeholder {
+  color: #333;
+  font-weight: normal;
+}
