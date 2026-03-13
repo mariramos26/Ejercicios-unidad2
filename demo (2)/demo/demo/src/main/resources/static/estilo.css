@@ -1,0 +1,108 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color:  #e8f0fe;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+input, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 6px;
+  font-size: 14px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btn-tarjeta {
+  display: inline-block !important;
+  width: 70px !important;
+  text-align: center;
+  margin-top: 4px;
+}
+#lista {
+  padding: 0;
+  width: 100%;
+}
+
+#lista li {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#buscar {
+  display: block;
+  width: 100%;
+  font-weight: normal;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+input::placeholder {
+  color: #333;
+  font-weight: normal;
+}
+
+#tablaDocentes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#tablaDocentes th, #tablaDocentes td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 14px;
+}
+
+#tablaDocentes th {
+  background-color: #d0e4f7;
+  font-weight: 600;
+}
+
+#tablaDocentes tr:nth-child(even) {
+  background-color: #f0f7ff;
+}
+
+#contenedorLista {
+  display: none;
+}
+#tablaDocentes td {
+  white-space: nowrap;
+}
+
+.btn-tarjeta {
+  display: inline-block !important;
+  width: 70px !important;
+  text-align: center;
+  margin: 2px;
+}
